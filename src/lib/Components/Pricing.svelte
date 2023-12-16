@@ -32,6 +32,9 @@
       feature_five: "Access to intergrate with third party API tools",
     },
   ];
+  const PricingButton =(plans)=>{
+    alert(`${plans.name} plan subscribed succesfully `)
+  }
 </script>
 
 <pricing>
@@ -49,7 +52,7 @@
             <li>{plans.feature_five}</li>
           </ul>
         </div>
-        <button>Subscribe</button>
+        <button on:click={()=>PricingButton(plans)}>Subscribe</button>
       </div>
     {/each}
   </div>
@@ -61,19 +64,35 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 0.9rem 1.2rem;
     gap: 0.9rem;
-    border: 1px solid red;
+   
     min-height: 400px;
   }
   .card {
     display: flex;
     gap: 0.6rem;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     padding: 0.9rem 1.2rem;
-    background-color: rgb(129, 129, 243);
+    background-color: rgb(20, 20, 95);
     height: 100%;
     position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .card:hover{
+    background-color: white;
+    transition: all 500ms;
+    border: .1px solid blue;
+  }
+  .card:hover h4, .card:hover h3, .card:hover li {
+    color: blue;
+  }
+  .card:hover button{
+    background-color: blue;
+    color: white;
+  }
+  h4{
+    color: white;
   }
   h3 {
     font-size: 2.3rem;
@@ -84,7 +103,11 @@
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-    padding-top: .9rem;
+    padding-top: 1.3rem;
+  }
+  li{
+    color:white;
+    
   }
   button {
     width: 80%;
