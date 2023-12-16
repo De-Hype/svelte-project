@@ -64,7 +64,6 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 0.9rem 1.2rem;
     gap: 0.9rem;
-   
     min-height: 400px;
   }
   .card {
@@ -113,7 +112,9 @@
     width: 80%;
     border: none;
     outline: none;
-    padding: 0.4rem;
+    padding: 0.6rem;
+    border-radius:10px;
+    line-break: 10px;
     font-weight: 800;
     background-color: white;
     color: blue;
