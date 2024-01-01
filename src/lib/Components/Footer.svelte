@@ -55,7 +55,7 @@
     span{
         background-color: black;
         color: white;
-        font-size: .84rem;
+        font-size: .80rem;
         padding: 3px;
         border-radius: 30%;
     }

@@ -3,7 +3,7 @@
 </script>
 <main>
     <div class="container">
-        <input type="text" name="" id="">
+        <input type="text" placeholder='Enter Email...' name="" id="">
         <button>Subscribe</button>
     </div>
 </main>
