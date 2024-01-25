@@ -43,9 +43,14 @@
         flex-direction: column;
         gap: .8rem;
     }
+    footer-col-two h4{
+      font-size: .8rem;
+        font-weight: 800;
+    }
     .footer-navigations p{
-        font-size: 1.18rem;
+        font-size: .91rem;
         font-weight: 700;
+        cursor:pointer;
     }
     .wrapper{
         display: flex;
